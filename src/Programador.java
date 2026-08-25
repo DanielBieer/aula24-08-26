@@ -27,4 +27,13 @@ public class Programador extends Funcionario {
             System.out.println();
         }
     }
+
+    public int getExperiencia(String nomeLinguagem){
+        for (int i = 0; i < quantLing; i++) {
+            if (linguagens[i].getNome().equals(nomeLinguagem)){
+                return linguagens[i].getAnosExperiencia();
+            }
+        }
+        return 0;
+    }
 }
